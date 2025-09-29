@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muñeco de Nieve - A-Frame</title>
+  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <!-- Cielo invernal con degradado -->
+    <a-sky color="#B0E0E6"></a-sky>
+    
+    <!-- Suelo nevado más grande -->
+    <a-plane position="0 0 0" rotation="-90 0 0" width="50" height="50" color="#FFFFFF"></a-plane>
+    
+    <!-- ========== MUÑECO DE NIEVE ========== -->
+    
+    <!-- Bola inferior (más grande) -->
+    <a-sphere position="0 0.8 -5" radius="0.8" color="#FFFFFF" shadow></a-sphere>
+    
+    <!-- Bola media -->
+    <a-sphere position="0 2 -5" radius="0.6" color="#FFFFFF" shadow></a-sphere>
+    
+    <!-- Bola superior (cabeza) -->
+    <a-sphere position="0 3 -5" radius="0.4" color="#FFFFFF" shadow></a-sphere>
+    
+    <!-- Ojos -->
+    <a-sphere position="-0.15 3.1 -4.65" radius="0.05" color="#000000"></a-sphere>
+    <a-sphere position="0.15 3.1 -4.65" radius="0.05" color="#000000"></a-sphere>
+    
+    <!-- Nariz (zanahoria) -->
+    <a-cone position="0 3 -4.6" radius-bottom="0.05" radius-top="0" height="0.3" color="#FF6600" rotation="90 0 0"></a-cone>
+    
+    <!-- Boca -->
+    <a-sphere position="-0.1 2.85 -4.65" radius="0.03" color="#000000"></a-sphere>
+    <a-sphere position="0 2.8 -4.65" radius="0.03" color="#000000"></a-sphere>
+    <a-sphere position="0.1 2.85 -4.65" radius="0.03" color="#000000"></a-sphere>
+    
+    <!-- Botones del cuerpo -->
+    <a-sphere position="0 2.2 -4.65" radius="0.06" color="#000000"></a-sphere>
+    <a-sphere position="0 1.9 -4.65" radius="0.06" color="#000000"></a-sphere>
+    <a-sphere position="0 1.6 -4.65" radius="0.06" color="#000000"></a-sphere>
+    
+    <!-- Sombrero -->
+    <a-cylinder position="0 3.4 -5" radius="0.5" height="0.05" color="#000000"></a-cylinder>
+    <a-cylinder position="0 3.75 -5" radius="0.3" height="0.6" color="#000000"></a-cylinder>
+    
+    <!-- Brazos -->
+    <a-cylinder position="-0.8 2.1 -5" radius="0.05" height="1" color="#8B4513" rotation="0 0 -45"></a-cylinder>
+    <a-cylinder position="0.8 2.1 -5" radius="0.05" height="1" color="#8B4513" rotation="0 0 45"></a-cylinder>
+    
+    <!-- Bufanda -->
+    <a-torus position="0 2.7 -5" radius="0.5" radius-tubular="0.08" color="#FF0000"></a-torus>
+    <a-box position="0.3 2.5 -4.7" width="0.15" height="0.6" depth="0.1" color="#FF0000" rotation="0 0 -20"></a-box>
+    
+    <!-- ========== ÁRBOLES DE NAVIDAD ========== -->
+    
+    <!-- Árbol 1 (izquierda) -->
+    <a-cone position="-4 1.5 -8" radius-bottom="0.8" radius-top="0" height="3" color="#228B22" shadow></a-cone>
+    <a-cylinder position="-4 0.3 -8" radius="0.2" height="0.6" color="#8B4513"></a-cylinder>
+    
+    <!-- Árbol 2 (izquierda cerca) -->
+    <a-cone position="-3 1 -6" radius-bottom="0.6" radius-top="0" height="2" color="#2E8B57" shadow></a-cone>
+    <a-cylinder position="-3 0.2 -6" radius="0.15" height="0.4" color="#8B4513"></a-cylinder>
+    
+    <!-- Árbol 3 (derecha) -->
+    <a-cone position="4.5 1.5 -9" radius-bottom="0.8" radius-top="0" height="3" color="#228B22" shadow></a-cone>
+    <a-cylinder position="4.5 0.3 -9" radius="0.2" height="0.6" color="#8B4513"></a-cylinder>
+    
+    <!-- Árbol 4 (derecha cerca) -->
+    <a-cone position="3.5 1 -6.5" radius-bottom="0.6" radius-top="0" height="2" color="#2E8B57" shadow></a-cone>
+    <a-cylinder position="3.5 0.2 -6.5" radius="0.15" height="0.4" color="#8B4513"></a-cylinder>
+    
+    <!-- Árbol 5 (al fondo izquierda) -->
+    <a-cone position="-6 2 -12" radius-bottom="1" radius-top="0" height="4" color="#228B22" shadow></a-cone>
+    <a-cylinder position="-6 0.4 -12" radius="0.25" height="0.8" color="#8B4513"></a-cylinder>
+    
+    <!-- Árbol 6 (al fondo derecha) -->
+    <a-cone position="6 2 -13" radius-bottom="1" radius-top="0" height="4" color="#228B22" shadow></a-cone>
+    <a-cylinder position="6 0.4 -13" radius="0.25" height="0.8" color="#8B4513"></a-cylinder>
+    
+    <!-- ========== BOLAS DE NIEVE DECORATIVAS ========== -->
+    
+    <a-sphere position="-2 0.3 -4" radius="0.3" color="#FFFFFF"></a-sphere>
+    <a-sphere position="2.5 0.25 -4.5" radius="0.25" color="#FFFFFF"></a-sphere>
+    <a-sphere position="-1.5 0.2 -3" radius="0.2" color="#FFFFFF"></a-sphere>
+    <a-sphere position="1.8 0.2 -3.5" radius="0.2" color="#FFFFFF"></a-sphere>
+    
+    <!-- ========== REGALOS ========== -->
+    
+    <!-- Regalo 1 (rojo grande) -->
+    <a-box position="-1.5 0.35 -4.5" width="0.7" height="0.7" depth="0.7" color="#CC0000" shadow></a-box>
+    <a-box position="-1.5 0.35 -4.5" width="0.75" height="0.1" depth="0.75" color="#FFD700"></a-box>
+    <a-box position="-1.5 0.7 -4.5" width="0.1" height="0.7" depth="0.75" color="#FFD700"></a-box>
+    <a-torus position="-1.5 0.9 -4.5" radius="0.15" radius-tubular="0.03" color="#FFD700" rotation="90 0 0"></a-torus>
+    
+    <!-- Regalo 2 (azul mediano) -->
+    <a-box position="1.2 0.25 -4.2" width="0.5" height="0.5" depth="0.5" color="#0066CC" shadow></a-box>
+    <a-box position="1.2 0.25 -4.2" width="0.55" height="0.08" depth="0.55" color="#FFFFFF"></a-box>
+    <a-box position="1.2 0.5 -4.2" width="0.08" height="0.5" depth="0.55" color="#FFFFFF"></a-box>
+    
+    <!-- Regalo 3 (verde pequeño) -->
+    <a-box position="1.5 0.15 -4.8" width="0.3" height="0.3" depth="0.3" color="#228B22" shadow></a-box>
+    <a-box position="1.5 0.15 -4.8" width="0.33" height="0.05" depth="0.33" color="#FF69B4"></a-box>
+    <a-box position="1.5 0.3 -4.8" width="0.05" height="0.3" depth="0.33" color="#FF69B4"></a-box>
+    
+    <!-- Regalo 4 (morado) -->
+    <a-box position="-1.8 0.2 -5.2" width="0.4" height="0.4" depth="0.4" color="#800080" shadow></a-box>
+    <a-box position="-1.8 0.2 -5.2" width="0.43" height="0.06" depth="0.43" color="#00FF00"></a-box>
+    <a-box position="-1.8 0.4 -5.2" width="0.06" height="0.4" depth="0.43" color="#00FF00"></a-box>
+    <a-sphere position="-1.8 0.5 -5.2" radius="0.08" color="#00FF00"></a-sphere>
+    
+    <!-- ========== TRINEO ========== -->
+    
+    <!-- Base del trineo -->
+    <a-box position="2.5 0.15 -6" width="1.2" height="0.1" depth="0.6" color="#8B4513"></a-box>
+    
+    <!-- Laterales del trineo -->
+    <a-box position="2.5 0.25 -5.7" width="1.2" height="0.3" depth="0.05" color="#A0522D"></a-box>
+    <a-box position="2.5 0.25 -6.3" width="1.2" height="0.3" depth="0.05" color="#A0522D"></a-box>
+    
+    <!-- Patines curvos (cilindros inclinados) -->
+    <a-torus position="1.95 0.05 -5.75" radius="0.3" radius-tubular="0.05" color="#CD853F" rotation="0 90 0" arc="180"></a-torus>
+    <a-torus position="3.05 0.05 -5.75" radius="0.3" radius-tubular="0.05" color="#CD853F" rotation="0 90 0" arc="180"></a-torus>
+    <a-torus position="1.95 0.05 -6.25" radius="0.3" radius-tubular="0.05" color="#CD853F" rotation="0 90 0" arc="180"></a-torus>
+    <a-torus position="3.05 0.05 -6.25" radius="0.3" radius-tubular="0.05" color="#CD853F" rotation="0 90 0" arc="180"></a-torus>
+    
+    <!-- Respaldo del trineo -->
+    <a-box position="1.85 0.4 -6" width="0.05" height="0.6" depth="0.6" color="#8B4513"></a-box>
+    
+    <!-- Regalo en el trineo -->
+    <a-box position="2.6 0.35 -6" width="0.35" height="0.35" depth="0.35" color="#FF1493" shadow></a-box>
+    <a-box position="2.6 0.35 -6" width="0.38" height="0.06" depth="0.38" color="#FFFF00"></a-box>
+    
+    <!-- Cuerda del trineo -->
+    <a-cylinder position="3.3 0.15 -6" radius="0.02" height="0.8" color="#8B4513" rotation="0 0 90"></a-cylinder>
+    
+    <!-- ========== MONTAÑAS AL FONDO ========== -->
+    
+    <!-- Montaña izquierda -->
+    <a-cone position="-10 3 -20" radius-bottom="8" radius-top="0" height="6" color="#E0E0E0"></a-cone>
+    
+    <!-- Montaña centro -->
+    <a-cone position="0 4 -25" radius-bottom="10" radius-top="0" height="8" color="#F0F0F0"></a-cone>
+    
+    <!-- Montaña derecha -->
+    <a-cone position="12 3.5 -22" radius-bottom="9" radius-top="0" height="7" color="#E8E8E8"></a-cone>
+    
+    <!-- ========== COPOS DE NIEVE FLOTANTES ========== -->
+    
+    <a-sphere position="-1 4 -4" radius="0.05" color="#FFFFFF" animation="property: position; to: -1 0.5 -4; dur: 8000; loop: true; easing: linear"></a-sphere>
+    <a-sphere position="1.5 5 -5" radius="0.05" color="#FFFFFF" animation="property: position; to: 1.5 0.5 -5; dur: 10000; loop: true; easing: linear"></a-sphere>
+    <a-sphere position="-2.5 4.5 -6" radius="0.05" color="#FFFFFF" animation="property: position; to: -2.5 0.5 -6; dur: 9000; loop: true; easing: linear"></a-sphere>
+    <a-sphere position="2 5.5 -4.5" radius="0.05" color="#FFFFFF" animation="property: position; to: 2 0.5 -4.5; dur: 11000; loop: true; easing: linear"></a-sphere>
+    <a-sphere position="0.5 4.8 -7" radius="0.05" color="#FFFFFF" animation="property: position; to: 0.5 0.5 -7; dur: 9500; loop: true; easing: linear"></a-sphere>
+    
+    <!-- ========== NUBES ========== -->
+    
+    <a-sphere position="-8 6 -15" radius="0.8" color="#FFFFFF" opacity="0.7"></a-sphere>
+    <a-sphere position="-7.5 6.2 -15" radius="0.6" color="#FFFFFF" opacity="0.7"></a-sphere>
+    <a-sphere position="-7 6 -15" radius="0.7" color="#FFFFFF" opacity="0.7"></a-sphere>
+    
+    <a-sphere position="7 7 -18" radius="1" color="#FFFFFF" opacity="0.7"></a-sphere>
+    <a-sphere position="7.8 7.2 -18" radius="0.8" color="#FFFFFF" opacity="0.7"></a-sphere>
+    <a-sphere position="8.5 7 -18" radius="0.9" color="#FFFFFF" opacity="0.7"></a-sphere>
+    
+    <!-- ========== ILUMINACIÓN ========== -->
+    <a-light type="ambient" color="#CCE5FF" intensity="0.6"></a-light>
+    <a-light type="directional" color="#FFFFFF" intensity="0.8" position="5 10 2"></a-light>
+    <a-light type="point" color="#FFF5E1" intensity="0.5" position="0 3 -5"></a-light>
+    
+    <!-- ========== CÁMARA ========== -->
+    <a-entity position="0 2.5 2">
+      <a-camera></a-camera>
+    </a-entity>
+  </a-scene>
+</body>
+</html>
